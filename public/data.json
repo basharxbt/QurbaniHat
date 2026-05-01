@@ -35,7 +35,7 @@
   {
     "id": 2,
     "name": "Sahiwal Goat",
-    "type": "Cow",
+    "type": "Goat",
     "breed": "Sahiwal",
     "price": 180000,
     "weight": 350,

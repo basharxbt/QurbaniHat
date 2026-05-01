@@ -2,6 +2,7 @@ import { Geist, Geist_Mono, Open_Sans } from "next/font/google";
 import "./globals.css";
 import Narvbar from "@/components/Narvbar";
 import { Bounce, ToastContainer } from "react-toastify";
+import Footer from "@/components/Footer";
 
 const open_Sans = Open_Sans({
   variable: "--font-Open_Sans",
@@ -19,6 +20,7 @@ export default function RootLayout({ children }) {
       <body className="min-h-full flex flex-col">
         <Narvbar></Narvbar>
         {children}
+        <Footer></Footer>
         <ToastContainer
           position="top-center"
           autoClose={5000}

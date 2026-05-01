@@ -60,7 +60,7 @@ const LoginPage = () => {
     });
   };
   return (
-    <div>
+    <div className="h-screen">
       <div className="flex flex-col items-center justify-center ">
         <div className="my-5 text-center space-y-2">
           <p className="font-semibold text-gray-500 mt-1 text-xl ">
