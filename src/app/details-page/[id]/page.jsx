@@ -1,3 +1,4 @@
+import OrderBook from "@/components/OrderBook";
 import { allCattles } from "@/lib/data";
 import Image from "next/image";
 import Link from "next/link";
@@ -14,9 +15,8 @@ const CattleDetails = async ({ params }) => {
     return cid;
   });
 
-  console.log(animal);
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto min-h-screen">
       <div className=" p-8">
         <div key={animal.id} className=" mt-5 items-stretch">
           <div className="flex justify-between gap-5">
@@ -101,6 +101,7 @@ const CattleDetails = async ({ params }) => {
           </div>
         </div>
       </div>
+      <OrderBook></OrderBook>
     </div>
   );
 };

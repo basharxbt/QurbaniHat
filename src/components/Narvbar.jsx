@@ -5,11 +5,10 @@ import Image from "next/image";
 import Link from "next/link";
 
 const Narvbar = () => {
-  const { data, error } = authClient.useSession();
+  const { data, isPending } = authClient.useSession();
   console.log(data);
   return (
     <div className=" ">
-      <div className="min-h-10 bg-black/80"></div>
       <div className=" flex  items-center justify-between  container mx-auto ">
         <Link href="/">
           <div>
@@ -27,22 +26,48 @@ const Narvbar = () => {
           <ul className="space-x-5 font-bold ">
             <Link href="/">Home</Link>
             <Link href="/animals">All Animals </Link>
+            {data ? <Link href="/my-profile">My Profile</Link> : ""}
           </ul>
         </div>
-        {data ? (
-          <button onClick={() => authClient.signOut()} className="btn">
-            Logout
-          </button>
+        {isPending ? (
+          <span className="loading loading-bars loading-xl"></span>
         ) : (
-          <div className="flex gap-5 items-center">
-            <Link href="/login">
-              <button className="btn border  border-amber-300">Login</button>
-            </Link>
+          <div>
+            {data ? (
+              <div className="flex gap-5 items-center ">
+                <div className="flex items-center gap-3">
+                  <Image
+                    className="rounded-full"
+                    src={data.user.image}
+                    alt=""
+                    height={50}
+                    width={50}
+                  ></Image>
+                  <p>{data.user.name.toUpperCase()}</p>
+                </div>
+                <button
+                  onClick={() => authClient.signOut()}
+                  className="btn border border-amber-400"
+                >
+                  Logout
+                </button>
+              </div>
+            ) : (
+              <div className="flex gap-5 items-center">
+                <Link href="/login">
+                  <button className="btn border  border-amber-300">
+                    Login
+                  </button>
+                </Link>
 
-            <p className="text-amber-600 font-semibold">OR</p>
-            <Link href="/register">
-              <button className="btn border  border-amber-300">Register</button>
-            </Link>
+                <p className="text-amber-600 font-semibold">OR</p>
+                <Link href="/register">
+                  <button className="btn border  border-amber-300">
+                    Register
+                  </button>
+                </Link>
+              </div>
+            )}
           </div>
         )}
       </div>
