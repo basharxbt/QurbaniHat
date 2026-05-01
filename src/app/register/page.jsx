@@ -170,7 +170,7 @@ const RegisterPage = () => {
               className="btn w-full bg-amber-600 text-white"
               type="submit"
             >
-              Login
+              Register
             </Button>
 
             <p>
