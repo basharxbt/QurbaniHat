@@ -1,5 +1,6 @@
 import { allCattles } from "@/lib/data";
 import SingleCattle from "./SingleCattle";
+import Link from "next/link";
 
 const Cattle = async () => {
   const animals = await allCattles();
@@ -15,6 +16,16 @@ const Cattle = async () => {
         {animals.slice(0, 4).map((ani) => (
           <SingleCattle key={ani.id} animal={ani}></SingleCattle>
         ))}
+      </div>
+
+      <div className="flex items-center justify-center mb-5">
+        <Link
+          className="bg-yellow-400 rounded-4xl font-semibold px-10 text-xl w-max  py-2"
+          href="/animals"
+        >
+          {" "}
+          View All
+        </Link>
       </div>
     </div>
   );

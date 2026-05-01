@@ -9,7 +9,7 @@
     "age": 3,
     "location": "Bogura",
     "description": "Healthy deshi cow suitable for Qurbani. Naturally grass-fed, strong immunity and well maintained.",
-    "image": "https://i.postimg.cc/RhHH6f3s/Choosing-the-Right-Animal-for-Qurbani.jpg",
+    "image": "https://i.postimg.cc/9fK6nk23/pexels-mographe-9415125.jpg",
     "category": "Large Animal",
     "feedManagement": "Grass & Grain Fed",
     "healthCare": [
@@ -34,15 +34,15 @@
   },
   {
     "id": 2,
-    "name": "Sahiwal Goat",
-    "type": "Goat",
-    "breed": "Sahiwal",
-    "price": 180000,
-    "weight": 350,
-    "age": 4,
+    "name": "Desert Camel",
+    "type": "Camel",
+    "breed": "Desi Camel",
+    "price": 250000,
+    "weight": 450,
+    "age": 5,
     "location": "Rajshahi",
-    "description": "Premium Sahiwal breed with large body structure, high milk/meat potential and strong health condition.",
-    "image": "https://i.postimg.cc/mkHHzMcd/download.jpg",
+    "description": "Strong desert camel with high endurance, suitable for Qurbani and heavy load capacity.",
+    "image": "https://i.postimg.cc/5tThRrJd/pexels-jdgromov-30688194.jpg",
     "category": "Large Animal",
     "feedManagement": "Grass & Grain Fed",
     "healthCare": [
@@ -52,17 +52,8 @@
       "LSD Vaccinated"
     ],
     "feedVariety": {
-      "grass": ["Maize", "Pakchong", "Napier", "German", "Para"],
-      "grain": [
-        "Maize Bran",
-        "Wheat bran",
-        "Rice polish",
-        "Rice bran",
-        "Soyabean",
-        "Lentil Bran",
-        "Grass Pea",
-        "Mustard Oil Cake"
-      ]
+      "grass": ["Maize", "Napier", "Desert Grass"],
+      "grain": ["Barley", "Wheat Bran", "Oats"]
     }
   },
   {
@@ -75,7 +66,7 @@
     "age": 3.5,
     "location": "Dhaka",
     "description": "High quality imported cross breed with strong bone structure and excellent fattening condition.",
-    "image": "https://i.postimg.cc/zvggbWLP/download-(1).jpg",
+    "image": "https://i.postimg.cc/DzH9MNTR/pexels-dropshado-5867871.jpg",
     "category": "Large Animal",
     "feedManagement": "Grass & Grain Fed",
     "healthCare": [
@@ -100,7 +91,7 @@
   },
   {
     "id": 4,
-    "name": "Black Bengal Cow",
+    "name": "Black Bengal Goat",
     "type": "Goat",
     "breed": "Black Bengal",
     "price": 18000,
@@ -108,7 +99,7 @@
     "age": 1.5,
     "location": "Mymensingh",
     "description": "Popular Black Bengal goat known for tender meat, fast growth and strong adaptability.",
-    "image": "https://i.postimg.cc/RhHH6f3g/Gir-Cow-Animal-Husbandry-Tips.jpg",
+    "image": "https://i.postimg.cc/25MsKtYL/pexels-kold-shots-61080370-29755329.jpg",
     "category": "Small Animal",
     "feedManagement": "Grass & Grain Fed",
     "healthCare": [
@@ -118,30 +109,21 @@
       "LSD Vaccinated"
     ],
     "feedVariety": {
-      "grass": ["Maize", "Pakchong", "Napier", "German", "Para"],
-      "grain": [
-        "Maize Bran",
-        "Wheat bran",
-        "Rice polish",
-        "Rice bran",
-        "Soyabean",
-        "Lentil Bran",
-        "Grass Pea",
-        "Mustard Oil Cake"
-      ]
+      "grass": ["Maize", "Napier", "Para"],
+      "grain": ["Bran Mix", "Wheat Bran"]
     }
   },
   {
     "id": 5,
-    "name": "White Jamunapari Cow",
+    "name": "Jamunapari Goat",
     "type": "Goat",
     "breed": "Jamunapari",
     "price": 35000,
     "weight": 45,
     "age": 2,
     "location": "Kushtia",
-    "description": "Large size Jamunapari goat with attractive look, strong body and premium meat quality.",
-    "image": "https://i.postimg.cc/2yZZbvqK/Qurbani-Cow.jpg",
+    "description": "Large size Jamunapari goat with attractive look and premium meat quality.",
+    "image": "https://i.postimg.cc/43qDS0GJ/pexels-kayode-balogun-169877002-11638823.jpg",
     "category": "Small Animal",
     "feedManagement": "Grass & Grain Fed",
     "healthCare": [
@@ -151,17 +133,8 @@
       "LSD Vaccinated"
     ],
     "feedVariety": {
-      "grass": ["Maize", "Pakchong", "Napier", "German", "Para"],
-      "grain": [
-        "Maize Bran",
-        "Wheat bran",
-        "Rice polish",
-        "Rice bran",
-        "Soyabean",
-        "Lentil Bran",
-        "Grass Pea",
-        "Mustard Oil Cake"
-      ]
+      "grass": ["Maize", "Napier", "Para"],
+      "grain": ["Bran Mix", "Wheat Bran"]
     }
   },
   {
@@ -173,8 +146,8 @@
     "weight": 300,
     "age": 3,
     "location": "Pabna",
-    "description": "Hybrid deshi cow with strong body, fast growth and excellent feeding response.",
-    "image": "https://i.postimg.cc/k5GvcTBP/26-month-old-Red-Brahman-Bull.jpg",
+    "description": "Hybrid deshi cow with strong body and fast growth rate.",
+    "image": "https://i.postimg.cc/8C920YGT/pexels-aymanshuvro-32355112.jpg",
     "category": "Large Animal",
     "feedManagement": "Grass & Grain Fed",
     "healthCare": [
@@ -184,17 +157,8 @@
       "LSD Vaccinated"
     ],
     "feedVariety": {
-      "grass": ["Maize", "Pakchong", "Napier", "German", "Para"],
-      "grain": [
-        "Maize Bran",
-        "Wheat bran",
-        "Rice polish",
-        "Rice bran",
-        "Soyabean",
-        "Lentil Bran",
-        "Grass Pea",
-        "Mustard Oil Cake"
-      ]
+      "grass": ["Maize", "Napier", "Para"],
+      "grain": ["Maize Bran", "Wheat Bran"]
     }
   },
   {
@@ -206,8 +170,8 @@
     "weight": 330,
     "age": 4,
     "location": "Khulna",
-    "description": "Red Sindhi breed known for strong immunity, attractive red color and good meat yield.",
-    "image": "https://i.postimg.cc/cJCBmFrW/Australian-Beef.jpg",
+    "description": "Red Sindhi cow known for strong immunity and good meat yield.",
+    "image": "https://i.postimg.cc/fbpGrPsL/pexels-michael-wright-2160641032-37105370.jpg",
     "category": "Large Animal",
     "feedManagement": "Grass & Grain Fed",
     "healthCare": [
@@ -217,30 +181,21 @@
       "LSD Vaccinated"
     ],
     "feedVariety": {
-      "grass": ["Maize", "Pakchong", "Napier", "German", "Para"],
-      "grain": [
-        "Maize Bran",
-        "Wheat bran",
-        "Rice polish",
-        "Rice bran",
-        "Soyabean",
-        "Lentil Bran",
-        "Grass Pea",
-        "Mustard Oil Cake"
-      ]
+      "grass": ["Maize", "Napier", "Para"],
+      "grain": ["Maize Bran", "Wheat Bran"]
     }
   },
   {
     "id": 8,
-    "name": "Boer Cross Cow",
+    "name": "Boer Cross Goat",
     "type": "Goat",
     "breed": "Boer Cross",
     "price": 40000,
     "weight": 50,
     "age": 2.5,
     "location": "Chattogram",
-    "description": "Boer cross goat with heavy body, fast growth rate and premium meat quality.",
-    "image": "https://i.postimg.cc/8CcmHZjT/download-(2).jpg",
+    "description": "Boer cross goat with heavy body and fast growth rate.",
+    "image": "https://i.postimg.cc/jjmpF1TD/pexels-assadtanoliphotographer-17534051.jpg",
     "category": "Small Animal",
     "feedManagement": "Grass & Grain Fed",
     "healthCare": [
@@ -250,17 +205,8 @@
       "LSD Vaccinated"
     ],
     "feedVariety": {
-      "grass": ["Maize", "Pakchong", "Napier", "German", "Para"],
-      "grain": [
-        "Maize Bran",
-        "Wheat bran",
-        "Rice polish",
-        "Rice bran",
-        "Soyabean",
-        "Lentil Bran",
-        "Grass Pea",
-        "Mustard Oil Cake"
-      ]
+      "grass": ["Maize", "Napier", "Para"],
+      "grain": ["Bran Mix", "Wheat Bran"]
     }
   },
   {
@@ -273,7 +219,7 @@
     "age": 2.5,
     "location": "Rangpur",
     "description": "Budget-friendly local cow, naturally raised and suitable for Qurbani.",
-    "image": "https://i.postimg.cc/hGv1r2fF/download-(3).jpg",
+    "image": "https://i.postimg.cc/yNtMbGKs/pexels-monirulislam-32401115.jpg",
     "category": "Large Animal",
     "feedManagement": "Grass & Grain Fed",
     "healthCare": [
@@ -283,22 +229,13 @@
       "LSD Vaccinated"
     ],
     "feedVariety": {
-      "grass": ["Maize", "Pakchong", "Napier", "German", "Para"],
-      "grain": [
-        "Maize Bran",
-        "Wheat bran",
-        "Rice polish",
-        "Rice bran",
-        "Soyabean",
-        "Lentil Bran",
-        "Grass Pea",
-        "Mustard Oil Cake"
-      ]
+      "grass": ["Maize", "Napier", "Para"],
+      "grain": ["Maize Bran", "Wheat Bran"]
     }
   },
   {
     "id": 10,
-    "name": "Small Black Cow",
+    "name": "Small Black Goat",
     "type": "Goat",
     "breed": "Local Black",
     "price": 15000,
@@ -306,7 +243,7 @@
     "age": 1,
     "location": "Sylhet",
     "description": "Small size healthy goat, easy maintenance and affordable Qurbani option.",
-    "image": "https://i.postimg.cc/wBMQVw7g/Highland-cow-16.jpg",
+    "image": "https://i.postimg.cc/W4CBHyVJ/pexels-nadim-7582427.jpg",
     "category": "Small Animal",
     "feedManagement": "Grass & Grain Fed",
     "healthCare": [
@@ -316,17 +253,8 @@
       "LSD Vaccinated"
     ],
     "feedVariety": {
-      "grass": ["Maize", "Pakchong", "Napier", "German", "Para"],
-      "grain": [
-        "Maize Bran",
-        "Wheat bran",
-        "Rice polish",
-        "Rice bran",
-        "Soyabean",
-        "Lentil Bran",
-        "Grass Pea",
-        "Mustard Oil Cake"
-      ]
+      "grass": ["Maize", "Napier", "Para"],
+      "grain": ["Bran Mix", "Wheat Bran"]
     }
   },
   {
@@ -338,8 +266,8 @@
     "weight": 420,
     "age": 4.5,
     "location": "Dhaka",
-    "description": "Premium imported cross breed, very large body size with excellent fattening condition.",
-    "image": "https://i.postimg.cc/VNvWRK53/Highland-cow-19.jpg",
+    "description": "Premium imported cross breed with very large body size.",
+    "image": "https://i.postimg.cc/TPFz4sx6/pexels-sejio402-33754999.jpg",
     "category": "Large Animal",
     "feedManagement": "Grass & Grain Fed",
     "healthCare": [
@@ -349,31 +277,22 @@
       "LSD Vaccinated"
     ],
     "feedVariety": {
-      "grass": ["Maize", "Pakchong", "Napier", "German", "Para"],
-      "grain": [
-        "Maize Bran",
-        "Wheat bran",
-        "Rice polish",
-        "Rice bran",
-        "Soyabean",
-        "Lentil Bran",
-        "Grass Pea",
-        "Mustard Oil Cake"
-      ]
+      "grass": ["Maize", "Napier", "Para"],
+      "grain": ["Maize Bran", "Wheat Bran"]
     }
   },
   {
     "id": 12,
-    "name": "Medium Jamuna Cow",
-    "type": "Goat",
-    "breed": "Jamunapari Cross",
-    "price": 28000,
-    "weight": 38,
-    "age": 2,
+    "name": "Bactrian Camel",
+    "type": "Camel",
+    "breed": "Cross Camel",
+    "price": 260000,
+    "weight": 500,
+    "age": 6,
     "location": "Tangail",
-    "description": "Medium size healthy goat with balanced growth and good meat quality.",
-    "image": "https://i.postimg.cc/zfvFjxVJ/Holstein-Rojp.jpg",
-    "category": "Small Animal",
+    "description": "Strong dual-hump camel with high endurance and premium meat value.",
+    "image": "https://i.postimg.cc/bvW7B5h7/pexels-yazan-karkouti-15519-7333375.jpg",
+    "category": "Large Animal",
     "feedManagement": "Grass & Grain Fed",
     "healthCare": [
       "FMD Vaccinated",
@@ -382,17 +301,8 @@
       "LSD Vaccinated"
     ],
     "feedVariety": {
-      "grass": ["Maize", "Pakchong", "Napier", "German", "Para"],
-      "grain": [
-        "Maize Bran",
-        "Wheat bran",
-        "Rice polish",
-        "Rice bran",
-        "Soyabean",
-        "Lentil Bran",
-        "Grass Pea",
-        "Mustard Oil Cake"
-      ]
+      "grass": ["Desert Grass", "Napier"],
+      "grain": ["Barley", "Oats"]
     }
   }
 ]

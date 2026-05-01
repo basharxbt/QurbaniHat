@@ -1,5 +1,6 @@
 import Banner from "@/components/Banner";
 import Cattle from "@/components/Cattle";
+import ExtraHomeSection from "@/components/ExtraHomeSection";
 import Image from "next/image";
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
       <Banner></Banner>
 
       <Cattle></Cattle>
+      <ExtraHomeSection></ExtraHomeSection>
     </div>
   );
 }

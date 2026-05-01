@@ -5,9 +5,9 @@ const SingleCattle = ({ animal }) => {
   return (
     <div>
       <div className="card bg-base-100 h-11/12 shadow-sm">
-        <figure className="h-96">
+        <figure className="">
           <Image
-            className="w-full"
+            className="w-full h-full"
             src={animal.image}
             alt={animal.breed}
             width={1000}
