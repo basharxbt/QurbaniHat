@@ -1,8 +1,12 @@
+"use client";
 import logo from "@/asset/QurbaniHat2.png";
+import { authClient } from "@/lib/auth-client";
 import Image from "next/image";
 import Link from "next/link";
 
 const Narvbar = () => {
+  const { data, error } = authClient.useSession();
+  console.log(data);
   return (
     <div className=" ">
       <div className="min-h-10 bg-black/80"></div>
@@ -22,16 +26,22 @@ const Narvbar = () => {
             <Link href="/animals">All Animals </Link>
           </ul>
         </div>
-        <div className="flex gap-5 items-center">
-          <Link href="/login">
-            <button className="btn ">Login</button>
-          </Link>
+        {data ? (
+          <button onClick={() => authClient.signOut()} className="btn">
+            Logout
+          </button>
+        ) : (
+          <div className="flex gap-5 items-center">
+            <Link href="/login">
+              <button className="btn ">Login</button>
+            </Link>
 
-          <p className="text-amber-600 font-semibold">OR</p>
-          <Link href="/register">
-            <button className="btn ">Register</button>
-          </Link>
-        </div>
+            <p className="text-amber-600 font-semibold">OR</p>
+            <Link href="/register">
+              <button className="btn ">Register</button>
+            </Link>
+          </div>
+        )}
       </div>
     </div>
   );

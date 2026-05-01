@@ -13,8 +13,8 @@ import {
 import { authClient } from "@/lib/auth-client";
 import { Slide, toast } from "react-toastify";
 import Link from "next/link";
-const LoginPage = () => {
-  const singIn = async () => {
+const RegisterPage = () => {
+  const singUp = async () => {
     const data = await authClient.signIn.social({
       provider: "google",
     });
@@ -22,12 +22,20 @@ const LoginPage = () => {
   const onSubmit = async (e) => {
     e.preventDefault();
     const formData = new FormData(e.currentTarget);
-    const userInfo = Object.fromEntries(formData);
-    const { email, password } = userInfo;
 
-    const { data, error } = await authClient.signIn.email({
+    const userInfo = Object.fromEntries(formData);
+    const { email, password, name, photo } = userInfo;
+
+    console.log(userInfo);
+
+    // console.log(email, password, name, photo);
+
+    const { data, error } = await authClient.signUp.email({
       email: email,
       password: password,
+      name: name,
+
+      photo: photo,
       rememberMe: true,
       callbackURL: "/",
     });
@@ -74,7 +82,7 @@ const LoginPage = () => {
         <div className="p-5 border border-gray-200 flex flex-col items-center w-120">
           <div className="w-full">
             <button
-              onClick={singIn}
+              onClick={singUp}
               className="btn bg-white text-black border-[#e5e5e5] w-full"
             >
               <svg
@@ -111,6 +119,12 @@ const LoginPage = () => {
           <h2 className="text-amber-600 font-bold my-3">OR</h2>
 
           <Form className="flex  flex-col gap-4 w-full" onSubmit={onSubmit}>
+            <TextField name="name" isRequired className="w-full ">
+              <Label>Full Name</Label>
+              <Input placeholder="John Doe" />
+              <Description>Name field is required</Description>
+            </TextField>
+
             <TextField
               isRequired
               name="email"
@@ -125,6 +139,13 @@ const LoginPage = () => {
               <Label>Email</Label>
               <Input placeholder="john@example.com" />
               <FieldError />
+            </TextField>
+
+            <TextField name="photo" isRequired className="w-full ">
+              <Label>Photo Url</Label>
+              <Input placeholder="https://example.com/photo.jpg" />
+
+              <Description>Photo Url is required</Description>
             </TextField>
             <TextField
               isRequired
@@ -153,14 +174,11 @@ const LoginPage = () => {
             </Button>
 
             <p>
-              Don’t have an account?
+              Already have an account?
               <span>
                 {" "}
-                <Link
-                  className="text-amber-700 hover:underline"
-                  href="/register"
-                >
-                  Register
+                <Link className="text-amber-700 hover:underline" href="/login">
+                  Login
                 </Link>
               </span>
             </p>
@@ -171,4 +189,4 @@ const LoginPage = () => {
   );
 };
 
-export default LoginPage;
+export default RegisterPage;
