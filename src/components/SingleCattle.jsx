@@ -4,7 +4,7 @@ import Link from "next/link";
 const SingleCattle = ({ animal }) => {
   return (
     <div>
-      <div className="card bg-base-100 h-11/12 shadow-sm">
+      <div className="card bg-base-100 h-11/12 shadow-sm transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 cursor-pointer">
         <figure className="">
           <Image
             className="w-full h-full"

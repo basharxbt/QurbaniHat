@@ -22,7 +22,7 @@ const Cattle = async () => {
 
       <div className="flex items-center justify-center mb-5 ">
         <Link
-          className="bg-yellow-400 rounded-4xl font-semibold px-10 text-xl w-max  py-2"
+          className="bg-yellow-400 rounded-4xl font-semibold px-10 text-xl w-max  py-2 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 cursor-pointer"
           href="/animals"
         >
           {" "}

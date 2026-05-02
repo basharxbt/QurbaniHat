@@ -12,7 +12,7 @@ const TopBreeds = async () => {
         {animals.slice(0, 5).map((a) => {
           return (
             <Link key={a.id} href={`/details-page/${a.id}`}>
-              <div className="mx-10 text-center">
+              <div className="mx-10 p-3 rounded-2xl text-center transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 cursor-pointer ">
                 <Image
                   className="h-30 w-full rounded-2xl"
                   src={a.image}
