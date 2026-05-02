@@ -26,25 +26,29 @@ const Narvbar = () => {
           <ul className="space-x-5 font-bold ">
             <Link href="/">Home</Link>
             <Link href="/animals">All Animals </Link>
-            {data ? <Link href="/my-profile">My Profile</Link> : ""}
+            <Link href="/my-profile">My Profile</Link>
           </ul>
         </div>
         {isPending ? (
           <span className="loading loading-bars loading-xl"></span>
         ) : (
           <div>
-            {data ? (
+            {data.user?.image && data.user.image.startsWith("http") ? (
               <div className="flex gap-5 items-center ">
                 <div className="flex items-center gap-3">
-                  <Link href="/my-profile">
-                    <Image
-                      className="rounded-full"
-                      src={data.user.image}
-                      alt=""
-                      height={50}
-                      width={50}
-                    ></Image>
-                  </Link>
+                  {data.user?.image ? (
+                    <Link href="/my-profile">
+                      <Image
+                        className="rounded-full"
+                        src={data.user?.image}
+                        alt=""
+                        height={50}
+                        width={50}
+                      ></Image>
+                    </Link>
+                  ) : (
+                    ""
+                  )}
                   <p>{data.user.name.toUpperCase()}</p>
                 </div>
                 <button

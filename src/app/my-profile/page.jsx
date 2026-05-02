@@ -4,6 +4,7 @@ import { EditProfile } from "@/components/EditProfile";
 import { authClient } from "@/lib/auth-client";
 import Image from "next/image";
 import React from "react";
+import { CiImageOff } from "react-icons/ci";
 import { HashLoader } from "react-spinners";
 
 const Myprofile = () => {
@@ -17,14 +18,22 @@ const Myprofile = () => {
     );
   return (
     <div className="h-screen container mx-auto my-10 flex justify-center items-center">
-      <div className="p-5 border flex flex-col items-center border-gray-300 space-y-2.5">
-        <Image
-          className="rounded-3xl w-full"
-          src={data.user.image}
-          alt={data.user.name}
-          height={100}
-          width={100}
-        ></Image>
+      <div className="p-10 rounded-3xl border flex flex-col items-center border-gray-300 space-y-2.5">
+        <div className="p-5 rounded-full">
+          {data.user?.image && data.user.image.startsWith("http") ? (
+            <Image
+              className="rounded-3xl w-full"
+              src={data.user?.image}
+              alt={data.user.name}
+              height={100}
+              width={100}
+            ></Image>
+          ) : (
+            <div>
+              <CiImageOff className="text-9xl text-amber-700" />
+            </div>
+          )}
+        </div>
         <div>
           <p
             className="

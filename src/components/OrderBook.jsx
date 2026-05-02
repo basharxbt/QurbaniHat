@@ -4,13 +4,16 @@ import { Button, FieldError, Input, Label, TextField } from "@heroui/react";
 import { toast } from "react-toastify";
 
 const OrderBook = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    toast.success("Order Success");
+
+    e.target.reset();
+  };
   return (
     <div className="my-5 ">
       <h1 className="text-3xl font-bold text-center">Book Now</h1>
-      <form
-        onSubmit={() => toast.success("Order Success")}
-        className="flex flex-col gap-4 "
-      >
+      <form onSubmit={handleSubmit} className="flex flex-col gap-4 ">
         <TextField isRequired className="w-full" name="name" type="text">
           <Label>Name</Label>
           <Input placeholder="Enter your name" />
