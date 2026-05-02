@@ -7,11 +7,19 @@ import Link from "next/link";
 const Narvbar = () => {
   const { data, isPending } = authClient.useSession();
   console.log(data);
+
+  const ulList = (
+    <>
+      <Link href="/">Home</Link>
+      <Link href="/animals">All Animals </Link>
+      <Link href="/my-profile">My Profile</Link>
+    </>
+  );
   return (
     <div className=" ">
-      <div className=" flex  items-center justify-between  container mx-auto ">
-        <Link href="/">
-          <div>
+      <div className=" flex  items-center justify-around md:justify-between  container mx-auto px-5">
+        <div className="flex gap-3">
+          <Link href="/">
             <Image
               className="rounded-lg"
               src={logo}
@@ -19,24 +27,52 @@ const Narvbar = () => {
               height={100}
               width={100}
             ></Image>
+          </Link>
+
+          <div className="navbar-start md:hidden">
+            <div className="dropdown">
+              <div
+                tabIndex={0}
+                role="button"
+                className="btn btn-ghost btn-circle"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  {" "}
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M4 6h16M4 12h16M4 18h7"
+                  />{" "}
+                </svg>
+              </div>
+              <ul
+                tabIndex="-1"
+                className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow space-y-3"
+              >
+                {ulList}
+              </ul>
+            </div>
           </div>
-        </Link>
+        </div>
 
         <div>
-          <ul className="space-x-5 font-bold ">
-            <Link href="/">Home</Link>
-            <Link href="/animals">All Animals </Link>
-            <Link href="/my-profile">My Profile</Link>
-          </ul>
+          <ul className="space-x-5 font-bold hidden md:block ">{ulList}</ul>
         </div>
         {isPending ? (
           <span className="loading loading-bars loading-xl"></span>
         ) : (
           <div>
-            {data.user?.image && data.user.image.startsWith("http") ? (
-              <div className="flex gap-5 items-center ">
-                <div className="flex items-center gap-3">
-                  {data.user?.image ? (
+            {data ? (
+              <div className="flex  gap-5 items-center ">
+                <div className="flex  items-center gap-3">
+                  {data.user?.image && data.user.image.startsWith("http") ? (
                     <Link href="/my-profile">
                       <Image
                         className="rounded-full"

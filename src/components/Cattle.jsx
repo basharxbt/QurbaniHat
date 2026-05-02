@@ -18,7 +18,7 @@ const Cattle = async () => {
         ))}
       </div>
 
-      <div className="flex items-center justify-center mb-5">
+      <div className="flex items-center justify-center mb-5 ">
         <Link
           className="bg-yellow-400 rounded-4xl font-semibold px-10 text-xl w-max  py-2"
           href="/animals"

@@ -80,12 +80,12 @@ const RegisterPage = () => {
     <div className="min-h-screen">
       <div className="flex flex-col items-center justify-center ">
         <div className="my-5 text-center space-y-2">
-          <h2 className="font-semibold text-2xl">Register account</h2>
-          <p className="font-semibold text-gray-500 mt-1 text-xl ">
+          {/* <p className="font-semibold text-gray-500 mt-1 text-xl ">
             Please enter your details to Register.
-          </p>
+          </p> */}
         </div>
         <div className="p-5 border border-gray-200 flex flex-col items-center w-120">
+          <h2 className="font-semibold text-2xl mb-3">Register account</h2>
           <Form className="flex  flex-col gap-4 w-full" onSubmit={onSubmit}>
             <TextField name="name" isRequired className="w-full ">
               <Label>Full Name</Label>

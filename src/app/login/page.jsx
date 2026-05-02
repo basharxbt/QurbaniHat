@@ -66,12 +66,9 @@ const LoginPage = () => {
           <p className="font-semibold text-gray-500 mt-1 text-xl ">
             Welcome Back !
           </p>
-          <h2 className="font-semibold text-2xl">Login In your account</h2>
-          <p className="font-semibold text-gray-500 mt-1 text-xl ">
-            Please enter your details to Login.
-          </p>
         </div>
         <div className="p-5 border border-gray-200 flex flex-col items-center w-120">
+          <h2 className="font-semibold mb-5 text-2xl">Login In your account</h2>
           <Form className="flex  flex-col gap-4 w-full" onSubmit={onSubmit}>
             <TextField
               isRequired
