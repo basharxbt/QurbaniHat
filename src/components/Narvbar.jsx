@@ -36,13 +36,15 @@ const Narvbar = () => {
             {data ? (
               <div className="flex gap-5 items-center ">
                 <div className="flex items-center gap-3">
-                  <Image
-                    className="rounded-full"
-                    src={data.user.image}
-                    alt=""
-                    height={50}
-                    width={50}
-                  ></Image>
+                  <Link href="/my-profile">
+                    <Image
+                      className="rounded-full"
+                      src={data.user.image}
+                      alt=""
+                      height={50}
+                      width={50}
+                    ></Image>
+                  </Link>
                   <p>{data.user.name.toUpperCase()}</p>
                 </div>
                 <button

@@ -31,7 +31,7 @@ const CattleDetails = async ({ params }) => {
             </div>
             <div className="space-y-4 h-full">
               <p className="text-xl font-bold">{animal.name}</p>
-              <p className="text-xl font-bold">৳ {animal.price}</p>
+              <p className="text-xl font-bold">৳ {animal.price}.00</p>
               <div className="flex gap-2">
                 <p className="text-xl font-bold"> Specifications</p>
               </div>
