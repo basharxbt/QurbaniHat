@@ -1,11 +1,10 @@
 import Banner from "@/components/Banner";
 import Cattle from "@/components/Cattle";
 import ExtraHomeSection from "@/components/ExtraHomeSection";
-import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className=" ">
+    <div>
       <Banner></Banner>
 
       <Cattle></Cattle>
