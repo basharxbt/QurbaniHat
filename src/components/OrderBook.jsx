@@ -11,7 +11,7 @@ const OrderBook = () => {
     e.target.reset();
   };
   return (
-    <div className="my-5 ">
+    <div className="my-5 p-5 md:p-0">
       <h1 className="text-3xl font-bold text-center">Book Now</h1>
       <form onSubmit={handleSubmit} className="flex flex-col gap-4 ">
         <TextField isRequired className="w-full" name="name" type="text">

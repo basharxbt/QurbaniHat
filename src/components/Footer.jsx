@@ -11,8 +11,8 @@ const Footer = () => {
 
   return (
     <div className="bg-gray-100 ">
-      <div className="py-10 flex justify-between container mx-auto">
-        <div className="flex flex-col space-y-2 w-100">
+      <div className="py-10 flex md:flex-row flex-col md:flex-wrap text-center md:text-start justify-between items-center container mx-auto">
+        <div className="flex flex-col items-center md:items-start md:p-0 p-5 space-y-2 w-100">
           <Image
             className="rounded-full"
             src={logo}
@@ -51,9 +51,9 @@ const Footer = () => {
             <Link href="/register">Register</Link>
           </ul>
         </div>
-        <div>
-          <h2>CONTACTS</h2>
-          <ul className="mt-10 space-y-3">
+        <div className="flex justify-center flex-col items-center">
+          <h2 className="font-semibold my-3">CONTACTS</h2>
+          <ul className="mt-7 space-y-3">
             <li className="flex items-center gap-2">
               <IoCall className="text-2xl" /> Tel: +880 164 736000
             </li>
@@ -61,14 +61,14 @@ const Footer = () => {
               <MdEmail className="text-2xl" />
               Email: shafiullahbashaar@gmail.com
             </li>
-            <li className="flex items-center gap-2">
+            <li className="flex items-center lg:items-start gap-2">
               <FaLocationDot className="text-2xl" />
               Address: House # 123, Street # 45, <br /> Gulshan, Dhaka
             </li>
           </ul>
 
           <div className="my-5 ">
-            <h6 className="footer-title">Social</h6>
+            <h6 className="footer-title font-bold">Social</h6>
             <div className="grid grid-flow-col gap-4 my-4">
               <a>
                 <svg
@@ -108,7 +108,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="text-center mb-10">
-        <p className="text-gray-500 text-sm">
+        <p className="text-gray-500 text-sm px-5 md:p-0">
           <br />
           Copyright © Qurbani Hat. All Rights Reserved Site developed by{" "}
           <span className="hover:underline">

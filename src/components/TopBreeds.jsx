@@ -8,7 +8,7 @@ const TopBreeds = async () => {
 
   const topBreeds = (
     <>
-      <div className="flex">
+      <div className="flex ">
         {animals.slice(0, 5).map((a) => {
           return (
             <Link key={a.id} href={`/details-page/${a.id}`}>

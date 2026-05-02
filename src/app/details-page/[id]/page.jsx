@@ -19,10 +19,10 @@ const CattleDetails = async ({ params }) => {
     <div className="container mx-auto min-h-screen">
       <div className=" p-8">
         <div key={animal.id} className=" mt-5 items-stretch">
-          <div className="flex justify-between gap-5">
+          <div className="flex flex-col xl:flex-row justify-between gap-5">
             <div>
               <Image
-                className="h-120"
+                className="h-fit w-full xl:h-120"
                 src={animal.image}
                 alt={animal.name}
                 width={500}

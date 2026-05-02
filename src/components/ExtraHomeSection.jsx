@@ -8,7 +8,7 @@ const ExtraHomeSection = () => {
         <p className="text-md font-semibold text-center text-gray-600 my-2">
           Learn how to perform qurbani properly
         </p>
-        <div className="grid grid-cols-3 gap-5 my-5">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 my-5 p-5 md:p-0">
           <p className="bg-slate-100 text-center p-10 rounded-2xl font-medium ">
             Choose a healthy animal that meets all Islamic requirements and is
             free from defects.
@@ -34,7 +34,9 @@ const ExtraHomeSection = () => {
           </p>
         </div>
       </div>
-      <TopBreeds></TopBreeds>
+      <div className="p-5 md:p-0">
+        <TopBreeds></TopBreeds>
+      </div>
     </div>
   );
 };

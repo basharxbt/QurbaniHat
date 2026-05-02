@@ -23,12 +23,13 @@ const AllAnimals = () => {
   });
   return (
     <div className="container mx-auto my-5">
-      <h1 className="text-3xl font-semibold">Featured All Cattle</h1>
-      <p className="my-3 text-gray-500">
-        Choose from our best cattle for your Qurbani
-      </p>
-
-      <div className="flex flex-col items-center justify-center  my-3">
+      <div className="text-center md:text-start">
+        <h1 className="text-3xl font-semibold">Featured All Cattle</h1>
+        <p className="my-3 text-gray-500">
+          Choose from our best cattle for your Qurbani
+        </p>
+      </div>
+      <div className="flex flex-col md:flex-row items-center justify-between bg-slate-100 p-5 rounded-2xl  my-3">
         <h2 className="text-xl font-semibold mb-2">Sort By Price</h2>
         <select
           onChange={(e) => setSorted(e.target.value)}
@@ -43,7 +44,7 @@ const AllAnimals = () => {
         </select>
       </div>
 
-      <div className="grid grid-cols-4 gap-5 ">
+      <div className="grid grid-cols-1 px-5 md:px-0 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
         {sortedAnimals.map((ani) => (
           <SingleCattle key={ani.id} animal={ani}></SingleCattle>
         ))}
