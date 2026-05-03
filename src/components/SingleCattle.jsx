@@ -4,7 +4,7 @@ import Link from "next/link";
 const SingleCattle = ({ animal }) => {
   return (
     <div>
-      <div className="card bg-base-100 h-11/12 shadow-sm transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 cursor-pointer">
+      <div className="card bg-base-100 h-11/12 shadow-sm ">
         <figure className="">
           <Image
             className="w-full h-full"
@@ -15,7 +15,7 @@ const SingleCattle = ({ animal }) => {
           ></Image>
         </figure>
         <div className="card-body">
-          <div className="flex justify-between items-center">
+          <div className="flex flex-wrap justify-between items-center">
             <h2 className="card-title text-xl">{animal.name}</h2>
             <div>
               <p className="font-bold text-lg text-yellow-800">
@@ -28,7 +28,7 @@ const SingleCattle = ({ animal }) => {
           <div className="card-actions ">
             <Link
               href={`/details-page/${animal.id}`}
-              className="btn bg-yellow-400 w-full"
+              className="btn bg-yellow-400 w-full transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 cursor-pointer"
             >
               See Details
             </Link>

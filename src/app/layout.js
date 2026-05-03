@@ -16,7 +16,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${open_Sans.className} h-full antialiased`}>
+    <html
+      data-theme="light"
+      lang="en"
+      className={`${open_Sans.className} h-full antialiased`}
+    >
       <body className="min-h-full flex flex-col">
         <Narvbar></Narvbar>
         {children}

@@ -84,9 +84,12 @@ const CattleDetails = async ({ params }) => {
               <div>
                 <p className="font-semibold">HealthCare: </p>
                 <hr className="text-gray-300 my-2" />
-                <div className="flex gap-2">
+                <div className="flex flex-wrap gap-2">
                   {animal.healthCare.map((health, index) => (
-                    <span className="flex items-center gap-2" key={index}>
+                    <span
+                      className="flex flex-wrap items-center gap-2"
+                      key={index}
+                    >
                       {" "}
                       <FaCircleCheck className="text-yellow-400" /> {health}
                     </span>

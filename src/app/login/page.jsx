@@ -61,13 +61,13 @@ const LoginPage = () => {
   };
   return (
     <div className="h-screen ">
-      <div className="flex flex-col items-center justify-center ">
+      <div className="flex p-10 flex-col items-center justify-center ">
         <div className="my-5 text-center space-y-2">
           <p className="font-semibold text-gray-500 mt-1 text-xl ">
             Welcome Back !
           </p>
         </div>
-        <div className="p-5 border border-gray-200 flex flex-col items-center w-120 ">
+        <div className="p-5 rounded-2xl border border-gray-200 flex flex-col items-center w-full md:w-120 ">
           <h2 className="font-semibold mb-5 text-2xl">Login In your account</h2>
           <Form className="flex  flex-col gap-4 w-full" onSubmit={onSubmit}>
             <TextField
@@ -82,12 +82,12 @@ const LoginPage = () => {
               }}
             >
               <Label>Email</Label>
-              <Input placeholder="john@example.com" />
+              <Input placeholder="Enter Your Email Address" />
               <FieldError />
             </TextField>
             <TextField
               isRequired
-              minLength={8}
+              minLength={4}
               name="password"
               type="password"
               validate={(value) => {

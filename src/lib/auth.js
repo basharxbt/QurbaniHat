@@ -6,6 +6,11 @@ const client = new MongoClient(process.env.MONGODB_URI);
 const db = client.db("QurbaniHat");
 
 export const auth = betterAuth({
+  trustedOrigins: [
+    "http://localhost:3000",
+
+    "https://qurbani-hat-9w66.vercel.app",
+  ],
   emailAndPassword: {
     enabled: true,
   },
