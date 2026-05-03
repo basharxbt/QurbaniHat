@@ -31,7 +31,6 @@ const LoginPage = () => {
       rememberMe: true,
       callbackURL: "/",
     });
-    console.log(data, error);
 
     if (error) {
       toast.error(`Invalid Email And Password`, {

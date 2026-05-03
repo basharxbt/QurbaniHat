@@ -3,10 +3,10 @@ import logo from "@/asset/QurbaniHat2.png";
 import { authClient } from "@/lib/auth-client";
 import Image from "next/image";
 import Link from "next/link";
+import { toast } from "react-toastify";
 
 const Narvbar = () => {
   const { data, isPending } = authClient.useSession();
-  console.log(data);
 
   const ulList = (
     <>
@@ -15,6 +15,11 @@ const Narvbar = () => {
       <Link href="/my-profile">My Profile</Link>
     </>
   );
+
+  const logOutBtn = () => {
+    authClient.signOut();
+    toast.success("Logout Success");
+  };
   return (
     <div className=" ">
       <div className=" flex  items-center justify-around md:justify-between  container mx-auto px-5">
@@ -88,7 +93,7 @@ const Narvbar = () => {
                   <p>{data.user.name.toUpperCase()}</p>
                 </div>
                 <button
-                  onClick={() => authClient.signOut()}
+                  onClick={logOutBtn}
                   className="btn border border-amber-400"
                 >
                   Logout

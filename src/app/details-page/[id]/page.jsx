@@ -8,7 +8,7 @@ import { FaCircleCheck } from "react-icons/fa6";
 const CattleDetails = async ({ params }) => {
   const { id } = await params;
   const cattle = await allCattles();
-  console.log(typeof id);
+
   const animal = cattle.find((c) => {
     const cid = Number(c.id) === Number(id);
 

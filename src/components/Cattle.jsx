@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Cattle = async () => {
   const animals = await allCattles();
-  console.log(animals);
+
   return (
     <div className="container mx-auto my-5 ">
       <h1 className="text-3xl font-semibold text-center md:text-start ">

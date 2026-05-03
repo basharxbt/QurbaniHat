@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 const AllAnimals = () => {
   const [animals, setAnimals] = useState([]);
   const [sorted, setSorted] = useState("default");
-  console.log(animals);
+
   useEffect(() => {
     const fetchAnimals = async () => {
       const res = await allCattles();

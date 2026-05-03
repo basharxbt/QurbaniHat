@@ -30,10 +30,6 @@ const RegisterPage = () => {
     const userInfo = Object.fromEntries(formData);
     const { email, password, name, photo } = userInfo;
 
-    console.log(userInfo);
-
-    // console.log(email, password, name, photo);
-
     const { data, error } = await authClient.signUp.email({
       email: email,
       password: password,
@@ -46,8 +42,6 @@ const RegisterPage = () => {
       await authClient.signOut();
       router.push("/login");
     }
-
-    console.log(data, error);
 
     if (error) {
       toast.error(`${error.message}`, {
