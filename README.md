@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🐄 Qurbani Hat – Livestock Booking Platform
 
-## Getting Started
+A modern livestock booking platform built for the Qurbani season, allowing users to browse, explore, and book healthy animals like cows, goats, and camels easily online.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🌐 Live URL
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+https://qurbani-hat-9w66.vercel.app/
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Project Purpose
 
-## Learn More
+Qurbani Hat is designed to simplify the process of buying livestock for Qurbani. It connects buyers with sellers, provides detailed animal listings, and ensures a smooth and user-friendly booking experience.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Key Features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Browse livestock (cows, goats, camels)
+- Filter and sort animals by price, weight, or type
+- Detailed animal information pages
+- Easy booking system
+- Authentication system (Better Auth)
+- Fast and responsive UI
+- Modern UI design with animations
+- Fully mobile responsive
+- Toast notifications for actions
+- Loading animations for better UX
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Tech Stack & NPM Packages
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Frontend
+
+- Next.js / React
+- Tailwind CSS
+
+### UI Libraries
+
+- `@heroui/react` – UI components
+- `daisyui` – Tailwind UI components
+- `gravity-ui` – design system components
+
+### Icons & UI Enhancements
+
+- `react-icons` – icon library
+
+### UX & Animations
+
+- `react-toastify` – notifications
+- `react-loading` – loading indicators
+- `marquee` – scrolling text effects
+- `animated-tailwindcss` – animation utilities
+
+---
