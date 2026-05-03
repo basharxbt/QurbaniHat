@@ -113,6 +113,7 @@ const LoginPage = () => {
 
             <div className="w-full">
               <button
+                type="button"
                 onClick={singIn}
                 className="btn bg-white text-black border-[#e5e5e5] w-full"
               >

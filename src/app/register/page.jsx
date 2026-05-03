@@ -138,6 +138,7 @@ const RegisterPage = () => {
 
             <div className="w-full">
               <button
+                type="button"
                 onClick={singUp}
                 className="btn bg-white text-black border-[#e5e5e5] w-full"
               >
