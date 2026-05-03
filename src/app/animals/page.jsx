@@ -22,7 +22,7 @@ const AllAnimals = () => {
     if (sorted === "high") return b.price - a.price;
   });
   return (
-    <div className="container mx-auto my-6">
+    <div className="container mx-auto my-5">
       <div className="text-center md:text-start">
         <h1 className="text-3xl font-semibold">Featured All Cattle</h1>
         <p className="my-3 text-gray-500">
